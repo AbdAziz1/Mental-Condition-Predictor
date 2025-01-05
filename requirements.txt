@@ -1,5 +1,5 @@
 streamlit
-tensorflow==2.5.0
-keras==2.4.3
+tensorflow
+keras
 matplotlib
 seaborn
