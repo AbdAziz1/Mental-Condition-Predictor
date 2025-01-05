@@ -30,8 +30,8 @@ This app leverages deep learning to classify statements into one of the followin
 st.sidebar.info("Model trained on custom data for educational purposes.")
 
 # Load model and tokenizer
-MODEL_PATH = 'E:/My Work/DataScience Projects/Mental Health Conditions Predictor/model.h5'
-TOKENIZER_PATH = 'E:/My Work/DataScience Projects/Mental Health Conditions Predictor/tokenizer.pkl'
+MODEL_PATH = './model.h5'
+TOKENIZER_PATH = './tokenizer.pkl'
 model, tokenizer = load_model_and_tokenizer(MODEL_PATH, TOKENIZER_PATH)
 
 # User input
