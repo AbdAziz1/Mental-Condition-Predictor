@@ -46,10 +46,8 @@ if st.button('Predict Emotion'):
         # Highlight the top emotion
         top_emotion_idx = np.argmax(probs)
         percent = round(probs[top_emotion_idx]*100)
-        st.markdown("""
-            <div style='text-align: center;'>
-                f"### Top Emotion: **{labels[top_emotion_idx]}** ({percent}%)"
-            </div>""", unsafe_allow_html=True)
+        st.markdown(f"### Top Emotion: **{labels[top_emotion_idx]}** ({percent}%)")
+            
 
         # Display results
         st.subheader("Prediction Results")
