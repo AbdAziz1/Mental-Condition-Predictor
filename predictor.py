@@ -8,7 +8,7 @@ import seaborn as sns
 
 def predict_emotion(text, model, tokenizer):
     sequences = tokenizer.texts_to_sequences([text])
-    x = pad_sequences(sequences, maxlen=6300)
+    x = pad_sequences(sequences, maxlen=5359)
     prediction = model.predict([x, x])
 
     emotions = {0: 'Anxiety', 1: 'Bipolar', 2: 'Depression', 3: 'Normal',
